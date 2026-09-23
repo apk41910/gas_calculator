@@ -1,4 +1,4 @@
-# gas_calculator
+### gas_calculator
 
 
 
@@ -22,7 +22,20 @@ which is why they predict vapor pressures better than vdW and RK.
 
 ## Features
 
-(무엇을 할 수 있는지 3~4개)
+### Calculator
+
+1. Choose a substance.
+2. Enter three of the four values: pressure, volume, moles, and temperature.
+   Various units are accepted for each (e.g. `200 kPa, 2 mol, 300 K`).
+3. The remaining value is calculated with five equations of state:
+   Ideal gas, van der Waals, Redlich-Kwong (RK),
+   Soave-Redlich-Kwong (SRK), and Peng-Robinson (PR).
+4. The phase (gas / liquid / supercritical) at the given condition
+   is also shown, along with the vapor-pressure correlation used
+   (Antoine when coefficients are available and in range, otherwise Ambrose-Walton).
+
+More substances can be added if you know the molar mass, critical temperature,
+critical pressure and acentric factor.
 
 ## Usage
 
@@ -41,18 +54,22 @@ Example:
 ```
 
 ## Plots
-(이미지 — 각각 위에 한 줄 설명)
+
 
 <img width="567" height="455" alt="H2O at 480 Z per P" src="https://github.com/user-attachments/assets/5e4e7524-ce32-4c58-8ae7-8cc70c3ef6c0" />
+
 
 
 <img width="567" height="455" alt="CO2 in PR Z per P in several T" src="https://github.com/user-attachments/assets/3a8ab26c-96d2-475d-a5a3-e9b0bc3c2677" />
 
 
+
 <img width="571" height="459" alt="CO2 P-V isotherms(RK) in several T" src="https://github.com/user-attachments/assets/a7e0b29b-55ba-40b4-9ddc-abf48eb10a97" />
 
 
+
 <img width="567" height="455" alt="Generalized compressibility chart(PR) several Material" src="https://github.com/user-attachments/assets/4ff6a4e4-498c-437e-8b1e-719516b94a88" />
+
 
 
 <img width="563" height="455" alt="CH4 deviation from ideal gas (PR) P-T" src="https://github.com/user-attachments/assets/f45e4659-5ead-4104-b048-ca9bc25d5f48" />
