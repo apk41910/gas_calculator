@@ -55,7 +55,6 @@ Example:
 
 ## Plots
 
-### Plots
 
 Five interactive plots are included. Use the widgets to change the
 substance, temperature and pressure range.
